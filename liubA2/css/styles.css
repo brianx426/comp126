@@ -1,0 +1,136 @@
+ /* Reset margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* Header styling */
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #0b3954;
+  color: white;
+  padding-bottom: 20px;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+  padding: 12px;
+  list-style: none;
+}
+
+nav ul li {
+  display: flex;
+}
+
+li:hover {
+  color: #1ba9c7;
+}
+
+/* Title section */
+.title {
+  padding-left: 10px;
+}
+
+/* Images layout */
+.images {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  align-items: flex-start;
+}
+
+/* Small images on top of each other */
+.small {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Large image */
+.large {
+  display: flex;
+  flex: 2;
+}
+
+/* Make images responsive */
+.images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12.5px;
+}
+
+/* Text sections in body */
+.littleThings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+/* Responsive footer */
+footer {
+  background-color: #cef17d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+
+/* Long image in header with bars */
+.bgImg {
+  display: flex;
+  width: 80%;
+  padding: 10px 0px;
+  align-items: flex-start;
+  align-self: end;
+}
+
+.bgImg div {
+  border-left: 12px solid #0b3954;
+  flex: 1;
+  background-image: url('./../img/leaves.webp');
+  height: 150px;
+  align-content: flex-end;
+  background-repeat: repeat;
+  
+}
+.bgImg .smallBar1 {
+  flex: .1 1 30px;
+  background-position: 0% center;
+}
+
+.bgImg .smallBar2 {
+  flex: .1 1 30px;
+  background-position: 10% center;
+}
+
+.bgImg .smallBar3 {
+  flex: .1 1 30px;
+  background-position: 20% center;
+}
+
+.bgImg .medBar {
+  flex: .25 1 50px;
+  background-position: 30% center;
+}
+
+.bgImg .bigBar {
+  flex: .5 1 70px;
+  background-position: 55% center;
+}
+
+.bgImg .biggerBar {
+  flex: 1 1 90px;
+  background-position: 80% center;
+}

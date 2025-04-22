@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale-1, shrink-to-fit=no"
+    />
+    <title>Form</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="contact">
+      <h1>CONTACT US</h1>
+      <h2>Fill out the form below to learn more!</h2>
+    </div>
+    <div class="container">
+      <form method="post" action="/">
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" required />
+
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" required />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="john.smith@gmail.com"
+          required
+        />
+
+        <div class="divider"></div>
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" rows="5"></textarea>
+
+        <!-- <button type="submit" class="btn">Submit</button> -->
+        <input type="submit" class="btn" />
+        <p>or press ENTER</p>
+      </form>
+    </div>
+  </body>
+</html>

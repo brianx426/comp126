@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  background: #363636;
+}
+
+.bar {
+  background: #4d4d4d;
+  text-align: right;
+  margin-top: 0;
+}
+
+.bar li {
+  display: inline-block;
+  text-align: center;
+}
+
+.bar a {
+  display: block;
+  min-width: 80px;
+  cursor: pointer;
+  padding: 1rem 0;
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}

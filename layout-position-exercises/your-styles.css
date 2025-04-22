@@ -1,0 +1,110 @@
+.div1 {
+  border-color: blue;
+  border-style: solid;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.span1 {
+  display: block;
+  background-color: #babec9;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-color: #000000;
+  border-style: solid;
+  width: 50%;
+}
+
+.div2 {
+  border-style: dotted;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.button1 {
+  background-color: #5f6b95;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 60px;
+  width: 25%;
+  margin: 0% 37.5%;
+  
+}
+
+.button1:hover {
+  background-color: #404764;
+}
+
+.too-big {
+  width: 50%;
+  background-color: #83a07c;
+  padding: 30px;
+  border: 20px;
+  border-style: solid;
+  margin: 0 25%;
+}
+
+.box-model {
+  width: 50%;
+  background-color: #83a07c;
+  padding: 30px;
+  border: 20px;
+  border-style: solid;
+  margin: 0 25%;
+  overflow: auto;
+}
+
+.lemon {
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.float1 {
+  display: inline;
+  font-size: 24px;
+}
+
+.lemon2 {
+  float: right;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.float2 {
+  display: inline;
+  font-size: 27px;
+  justify-self: right;
+  overflow-wrap: break-word;
+}
+
+.lemon3 {
+  float: left;
+  margin: 10px;
+}
+
+#ex-10 p {
+  font-size: 30px;
+}
+
+.clear {
+  float: none;
+}
+
+.col-1 {
+  background-color: #bdbbb5;
+  float: inline-start;
+}
+
+.col-2 {
+  background-color: #e5d1cf;
+  float: inline-end;
+}

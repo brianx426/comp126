@@ -1,0 +1,81 @@
+/*! responsive-nav.js 1.0.39 by @arielsalminen */
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 1rem;
+}
+
+.navContain {
+  grid-row: 1/4;
+  grid-column: 1/2;
+  border-radius: 12.5px;
+  background-color: aqua;
+  justify-items: start;
+}
+
+.pContain {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  border-radius: 12.5px;
+  background-color: aqua;
+  padding: 0.3rem;
+}
+
+.nav-collapse ul {
+  margin: 0.1rem;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+  margin: 0.1rem;
+  border-radius: 12.5px;
+  padding: 0.5rem;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-toggle {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
